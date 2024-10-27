@@ -316,6 +316,10 @@ footer img {
 
 
 @media (max-width: 750px) and (max-height: 940px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     header section {
         display: flex;
         justify-content: space-around;
@@ -378,7 +382,7 @@ footer img {
     }
 
     #sobre {
-        width: auto;
+        width: 90%;
         height: auto;
         padding: 5%;
         border-radius: 0;
@@ -400,6 +404,7 @@ footer img {
     .classes {
         width: 100%;
         position: relative;
+        left: 3%;
     }
 
     #btn-aves {
@@ -435,8 +440,8 @@ footer img {
     .slider-teste {
         position: relative;
         right: 19%;
-        width: 70%;
-        height: 29.5vh;
+        width: 75%;
+        height:26.3vh;
         border:1px solid #000
     }
 
@@ -538,7 +543,7 @@ footer img {
         height: 100%;
         margin: 0;
         padding: 0;
-        font-size: 14px;
+        font-size: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
