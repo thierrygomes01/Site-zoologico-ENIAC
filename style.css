@@ -29,7 +29,7 @@ header section {
 }
 
 .logo{
-    width: 12%;
+    width: 7%;
     cursor: pointer;
 }
 
@@ -332,9 +332,9 @@ footer img {
     }
 
     .logo {
-        width: 30%;
+        width: 18%;
         position: relative;
-        left: 25%;
+        left: 30%;
 
     }
 
@@ -342,7 +342,7 @@ footer img {
         display: block; 
         z-index: 1;
         position: relative;
-        left: 25%;
+        left: 30%;
     }
 
     .menu {
@@ -449,7 +449,7 @@ footer img {
     .slide-2, 
     .slide-3 {
         width: 66%;
-        height: 150px;
+        height: auto;
     }
     
     .slider-teste {
@@ -475,9 +475,9 @@ footer img {
 
     #localizacao {
         background-color: #0c0c0c; 
-        margin-top: 220px;
+        margin-top: 90px;
         width: 100%;
-        height: 110vh;
+        height: 920px;
     }
 
     .n1 {
@@ -538,13 +538,16 @@ footer img {
         color: #0e7443; 
         font-size: 18px;
     }
+
+    #mapa {
+        width: 100%;
+    }
     
-    iframe {
+    #mapa, iframe {
         margin-top: 8%;
         position: relative;
-        left: 2%;
-        width: 96%;
-        height: 35vh;
+        width: 100%;
+        height: 260px;
     }
 
     footer {
@@ -557,9 +560,9 @@ footer img {
         width: 100%;
         height: 100%;
         margin: 0;
-        padding: 0;
-        font-size: 10px;
-        display: flex;
+        padding: 5px;
+        font-size: 15px;
+        display: block;
         justify-content: center;
         align-items: center;
     }
@@ -567,7 +570,7 @@ footer img {
     .linkedin {
         margin: 0;
         padding: 10px;
-        width: 1.2rem;
+        width: 2.5rem;
         cursor: pointer;
     }
 }
