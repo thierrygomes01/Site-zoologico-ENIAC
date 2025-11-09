@@ -187,8 +187,6 @@ button {
   justify-content: center;
   padding: 10px;
 }
-
-/* <-- CORREÇÃO 1: Removido 'position: relative' e 'left: 34%' */
 .slide-1,
 .slide-2,
 .slide-3 {
@@ -200,12 +198,10 @@ button {
   height: 400px;
   border: 1px solid #000;
 }
-
-/* <-- CORREÇÃO 2: Removido 'display: flex', 'margin' e duplicado 'display: block' */
 .slider-teste img {
   display: block;
   width: 100%;
-  height: 100%; /* Adicionado para consistência */
+  height: 100%;
   object-fit: contain;
   visibility: hidden;
 }
@@ -307,8 +303,6 @@ footer img {
   padding: 0px;
   width: 3%;
 }
-
-/* ================== MEDIA QUERY MOBILE ================== */
 @media (max-width: 1023px) and (max-height: 1000px) {
   * {
     box-sizing: border-box;
@@ -439,7 +433,7 @@ footer img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* <-- Esta é a regra-chave */
+    align-items: center;
   }
   .slide-1,
   .slide-2,
@@ -447,15 +441,11 @@ footer img {
     width: 66%;
     height: auto;
   }
-
-  /* <-- CORREÇÃO 3: Removido 'position: relative' e 'right: 24%' */
   .slider-teste {
     width: 100%;
     height: 115%;
     border: none;
   }
-
-  /* <-- CORREÇÃO 4: Removido 'display: flex', 'margin' e duplicado 'display: block' */
   .slider-teste img {
     display: block;
     width: 100%;
@@ -571,7 +561,6 @@ footer img {
   }
 }
 
-/* ================== MEDIA QUERY DESKTOP ================== */
 @media (min-width: 1024px) and (max-width: 3440px) and (max-height: 1272px) {
   header section {
     width: 100%;
@@ -676,8 +665,6 @@ footer img {
     font-size: 25px;
     color: cornsilk;
   }
-
-  /* Esta regra agora centraliza os slides, pois eles não têm mais 'position: relative' */
   .slides {
     width: 100%;
     display: flex;
@@ -730,14 +717,12 @@ footer img {
     padding: 10px;
   }
 
-  /* Esta regra está correta aqui (foi corrigida no base) */
   .slide-1,
   .slide-2,
   .slide-3 {
     width: 800px;
   }
 
-  /* Esta regra centraliza o slider-teste dentro do .slide-X */
   .slider-teste {
     width: 600px;
     height: 400px;
@@ -745,7 +730,6 @@ footer img {
     margin: 0 auto;
   }
 
-  /* Esta regra já estava correta nesta media query */
   .slider-teste img {
     display: block;
     width: 100%;
